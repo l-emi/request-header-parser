@@ -20,5 +20,8 @@
   "dependencies": {
     "cors": "^2.8.4",
     "express": "^4.15.3"
+  },
+  "engines": {
+    "node": "6.11.1"
   }
 }
