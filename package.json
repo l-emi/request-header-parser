@@ -1,0 +1,26 @@
+{
+  "name": "request-header-parser",
+  "version": "1.0.0",
+  "description": "FreeCodeCamp's Request Header Parser project.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/l-emi/request-header-parser.git"
+  },
+  "author": "l-emi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/l-emi/request-header-parser/issues"
+  },
+  "homepage": "https://github.com/l-emi/request-header-parser#readme",
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.15.3",
+    "path": "^0.12.7",
+    "router": "^1.3.1"
+  }
+}
