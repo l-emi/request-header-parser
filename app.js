@@ -10,10 +10,14 @@ app.get('/', (req, res) => {
 });
 
 app.get('/api/whoami', (req, res) => {
+    let ip = req.headers['x-forwarded-for'] || 
+        req.connection.remoteAddress || 
+        req.socket.remoteAddress ||
+        req.connection.socket.remoteAddress;
     let info = {
-        'ipaddress': req.ip,
+        'ipaddress': ip,
         'language': req.headers['accept-language'].split(',')[0],
-        'software': req.headers["user-agent"].split("(")[1].split(")")[0]
+        'software': req.headers['user-agent'].split(')')[0].split('(')[1]
     };
 
     console.log(JSON.stringify(info));
